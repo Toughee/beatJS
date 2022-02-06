@@ -1,0 +1,32 @@
+{
+  "name": "beatjs",
+  "version": "1.0.0",
+  "description": "Music instrument app created in JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "codecleaner": "npx prettier --write '**/*.js'&&npx prettier --write '**/*.css'&&npx prettier --write '**/*.html'",
+    "litereport": "lighthouse http://localhost:3000/ --output json --output csv --output html --output-path tests/Lighthouse_audits/Lite.html --view | lighthouse-ci http://localhost:3000/",
+    "fullpr": "git add .&&git commit&&git push&&git merge",
+    "audits": "yarn install&&npm-update-all&&npm install react-scripts@latest&&npm audit&&npm audit fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Toughee/beatJS.git"
+  },
+  "keywords": [
+    "Music",
+    "JavaScript"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Toughee/beatJS/issues"
+  },
+  "homepage": "https://github.com/Toughee/beatJS#readme",
+  "dependencies": {
+    "lighthouse": "^9.3.1",
+    "lighthouse-ci": "^1.13.1",
+    "prettier": "^2.5.1"
+  }
+}
